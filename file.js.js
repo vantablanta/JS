@@ -157,3 +157,33 @@ function countBs(string)
       return (base* exponent)
     }
     alert(power(2,10));
+
+    
+  function power(base, exponent)
+  {
+    return (base* exponent)
+  }
+  alert(power(2,10));
+    
+
+  let girl= {
+    first_name: "peninah",
+    last_name: "Mbugua",
+    age:20,
+    height: 166,
+    color: "black",
+
+
+  }
+
+  let num =21;
+  console.log (num ++);
+
+  function greet (){
+    console.log ("hello world!")
+  }
+  
+  var add = function (a, b){ 
+    return (a + b); 
+  };
+
