@@ -187,3 +187,108 @@ function countBs(string)
     return (a + b); 
   };
 
+  let sequence = [1, 2, 3]; 
+  console.log (sequence.toString());
+  sequence.push(4); 
+  sequence.push(5); 
+  console.log(sequence);
+  console.log(sequence.pop()); 
+  console.log(sequence);
+
+  let sequence = [1, 2, 3]; 
+  console.log (sequence.toString());
+  console.log(sequence.join(""));
+  sequence.push(4); 
+
+  console.log(sequence);
+  console.log(sequence.shift()); 
+  console.log(sequence)
+  console.log(sequence);
+  console.log (sequence.unshift(10));
+  console.log(sequence);
+
+  
+  //object Michelle hasan array in it called favefoods.
+  let Michelle ={
+    salary : "200,000", // object
+    favefoods: ["ugali", "rice", "chapati"], // object with a list of value(array elements)
+    colors: "blue" // object
+  };
+     Michelle.dresscode = "dresses"
+     Michelle.colors = "yellow"
+console.log (Michelle.salary);
+console.log(Michelle.favefoods[1]);
+console.log (Michelle.dresscode);
+console.log (Michelle.colors);
+console.log( "pilau" in Michelle.favefoods);
+
+
+Object.assign(Michelle, {hairType: "weave",
+  makeup: "natural face"});
+
+console.log(Object.keys({x: 0, y: 0, z: 2})); 
+
+console.log(Michelle.makeup);
+let John= [ "boy", "26", "black"];
+console.log (typeof(John));
+let y= function(){};
+console.log(typeof(y));
+
+//sample of array with objects
+let foodtable =[
+  {Monday:["tea", "fish"]}, {Tuesday:["chapati", "pilau"]},{Wednesday:["mokimo", 'choma'],
+  uji: false}
+];
+console.log (foodtable);
+
+let journal = [ {events: ["work", "touched tree", "pizza", "running", "television"], 
+squirrel: false}, 
+{events: ["work", "ice cream", "cauliflower", "lasagna", "touched tree", "brushed teeth"], 
+squirrel: false},
+{events: ["weekend", "cycling", "break", "peanuts", "beer"], 
+squirrel: true}, 
+];
+console.log(journal)
+
+let Adriel= {Age:10};
+Arianna = Adriel;
+Sam = {Age:10};
+console.log(Arianna == Adriel);
+console.log( Sam == Adriel);
+Adriel.Age= 20;
+console.log (Arianna);
+Adriel.height= "30 cm";
+console.log (Arianna);
+Arianna.houseNumber= 90;
+console.log(Adriel);
+
+const score = {visitors: 0, home: 0}; 
+console.log (score.home);
+score.home =2;
+/*console.log (score.home);
+//score = {home:5};//// this method produces a TypeError*/
+
+
+let goals = {visitors: 0, home: 0}; 
+//score = {home:5};
+console.log(goals.home)// this doesnt work as well  */
+
+/*var goals = {visitors: 0, home: 0}; 
+score = {home:5};
+console.log(goals.home)// neither does this    */
+
+let todoList = ["cook", "clean", "shower"];
+ function remember(task) { 
+   todoList.push("shopping");
+    return (todoList);
+ };
+ function getTask() {
+    return todoList.shift();
+ };
+
+ function rememberUrgently(task) {
+    return todoList.push(task); 
+ };   
+ /*console.log(remember());
+ console.log(getTask());*/
+ console.log(rememberUrgently());
