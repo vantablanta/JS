@@ -291,9 +291,7 @@ let todoList = ["cook", "clean", "shower"];
  };   
  /*console.log(remember());
  console.log(getTask());*/
-<<<<<<< HEAD
  console.log(rememberUrgently());
-=======
  console.log(rememberUrgently());
 
  let array =[0, 1, 2, 3, 4,5]
@@ -325,4 +323,3 @@ console.log(range(5, 2, -1));
 // → [5, 4, 3, 2]
 console.log(sum(range(1, 10)));
 // → 55
->>>>>>> 339722a (js)
