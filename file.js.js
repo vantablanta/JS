@@ -323,3 +323,73 @@ console.log(range(5, 2, -1));
 // → [5, 4, 3, 2]
 console.log(sum(range(1, 10)));
 // → 55
+var User= {
+  age:50,
+  id:function(){
+    return (this.age + 20)
+  },
+  fullName:function (name1 , name2){
+    return (name1 + " " +name2)
+  }
+};
+var double= function (){
+  return (User.age *2)// You haveto introduce avriable to relate this functoion with object user
+}
+
+console.log (User.fullName("Michelle", "Njeri"));
+console.log (User.id());
+console.dir(User.fullName("Michelle" ,"Njeri"));
+console.log (double());
+
+
+/*var jina= function (name1 , name2){
+  this.name= name1 +" "+ name2;
+};
+
+jina.prototype.name= function (){
+ return this.name
+}
+var name = new jina("Vanta" , "Blanta");
+console.log (name.jina());*/console
+ var digit= [15,12];
+ var total = add.apply("", digit);
+ console.log (total);
+
+ 
+ var big = function(){
+   this.color= "black",
+   this.size= "20"
+ };
+big.prototype.get_color= function (){
+  return this.color}
+
+big.prototype.productOf= function(){
+  return ("this.size"  + "2 cm")
+
+}
+var Big= new big 
+console.log(Big.get_color())
+
+var body={
+  color: "green",
+  height: "80 cm",
+  
+};
+var color= big.prototype.get_color.apply(body);
+var height= big.prototype.productOf.apply(body);
+console.log (color);
+console.log (height);
+
+ function w (a, b) {    
+  if (typeof a !== 'number' || typeof b !== 'number') {        
+  pop ( 'TypeError' + 'add needs numbers' )   
+    }   
+     return a + b;
+   } ;
+
+   var try_it = function () {
+         try {        
+           add("seven");    } 
+           catch (e) {
+                     console.log(e.name + ': ' + e.message);    } }
+try_it();
